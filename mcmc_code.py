@@ -5,7 +5,7 @@ import emcee
 from star_animate import star_animate
 def load_tess():
 # load tess light_curves
-    csv1 = "residuals.csv"
+    csv1 = "tess_curve.csv"
     #csv2 = f"lat_{float(vec[0])}_lon{float(vec[1])}_radii{float(vec[2])}.csv"
     
     df1 = pd.read_csv(csv1)
