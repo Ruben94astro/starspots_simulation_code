@@ -2,6 +2,7 @@ import astropy.units as u
 from mcmc_code import load_tess, function_mse, main, lnprob, plot_simple_traces, print_detailed_results
 import os 
 import numpy as np
+from parameters import observing_baseline_days,cadence_time,total_frames
 
 import emcee
 
@@ -60,9 +61,9 @@ if __name__ == '__main__':
     # stellar parameterq  
     
     # base lines time parameter
-    observing_baseline_days = 5 * u.day
-    cadence_time = 60 * u.minute
-    total_frames = int((observing_baseline_days / cadence_time).decompose().value)
+    #observing_baseline_days = 5 * u.day
+    #cadence_time = 60 * u.minute
+    #total_frames = int((observing_baseline_days / cadence_time).decompose().value)
     
     #load flux and days of test light curve
     flux_tess, days_tess,flux_tess_error = load_tess()
