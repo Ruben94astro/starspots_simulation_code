@@ -1,7 +1,6 @@
 This repository contains the list of codes for simulating starspots.
 
-requeriments.txt will show you the packages need it for run
-Instructions for running
+requeriments.txt will show you the packages need it for running
 
 1) In parameters.py, configure the star value, such as n_points, which refers to the resolution of the sphere; the limb darkening coefficients
  u1 and u2, which can be estimated using atmospheric models (Phoenix, etc.); the rotation period; the inclination angle (elev); the observation time; and the cadence between each observation.  
